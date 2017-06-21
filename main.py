@@ -23,7 +23,7 @@ def index():
 def get_random_movie():
     # TODO: make a list with at least 5 movie titles
     # TODO: randomly choose one of the movies, and return it
-    randome_movie=[
+    random_movie=[
         "Mary Poppins",
         "Aliens",
         "The Wizard of Oz",
@@ -31,6 +31,6 @@ def get_random_movie():
         "X-men"
     ]
 
-    return 
+    return random_movie[randrange(len(random_movie))]
 
 app.run()
