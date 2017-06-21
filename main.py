@@ -1,5 +1,5 @@
 from flask import Flask
-
+from random import randrange
 app = Flask(__name__)
 
 app.config['DEBUG'] = True      # displays runtime errors in the browser, too
@@ -23,7 +23,14 @@ def index():
 def get_random_movie():
     # TODO: make a list with at least 5 movie titles
     # TODO: randomly choose one of the movies, and return it
-    return "The Big Lebowski"
+    randome_movie=[
+        "Mary Poppins",
+        "Aliens",
+        "The Wizard of Oz",
+        "The fly",
+        "X-men"
+    ]
 
+    return 
 
 app.run()
