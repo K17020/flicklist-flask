@@ -54,7 +54,7 @@ def add_movie():
 
     # TODO:
     # Use a template to render the confirmation message
-    return "Confirmation Message Under Construction..."
+    return render_template('add-confirmation.html', new_movie=new_movie)
 
 # TODO:
 # Modify the edit.html file to display the watchlist in an unordered list with bullets in front of each movie.

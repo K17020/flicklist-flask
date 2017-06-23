@@ -1,6 +1,4 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <h2>Edit My Watchlist</h2>
 
 <form action="/add" method="post">
@@ -9,7 +7,7 @@
         <input type="text" name="new-movie"/>
         to my watchlist.
     </label>
-    <input type="submit" value="Add It"/>
+    <input type="submit" value="Add It" />
 </form>
 
 <form action="/crossoff" method="post">
@@ -23,10 +21,9 @@
         </select>
         from my watchlist.
     </label>
-    <input type="submit" value="Cross It Off"/>
+    <input type="submit" value="Cross It Off" />
 </form>
 
 {% if error %}
-  <p class='error'>{{ error }}</p>
-{% endif %}
-{% endblock %}
+<p class='error'>{{ error }}</p>
+{% endif %} {% endblock %}
